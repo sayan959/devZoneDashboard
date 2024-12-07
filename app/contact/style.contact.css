@@ -1,0 +1,923 @@
+.project-details .projects-head {
+  background-image: url(/public/footer-bg.png), linear-gradient(#1d1d1d, #1d1d1d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.project-details .projects-head p {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #b5b5b5;
+  display: inline-block;
+  padding: 8px 40px;
+  position: relative;
+  background-color: rgba(6, 216, 137, 0.2);
+  margin-bottom: 10px;
+}
+
+.project-details .projects-head p::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project-details .projects-head p::after {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project-details .projects-head h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.project-details .abouth1 {
+  position: absolute;
+  opacity: 0;
+  width: 164px;
+  height: 210px;
+  left: 100px;
+  top: 90px;
+  border-radius: 70px;
+  z-index: 0;
+
+}
+
+.project-details .abouth2 {
+  position: absolute;
+  opacity: 0;
+  width: 191px;
+  height: 250px;
+  right: 100px;
+  border-radius: 130px 130px 0 0;
+  top: 170px;
+  z-index: 0;
+}
+
+.project-details .project-details-main {
+  background-color: #0f0f0f;
+  padding: 50px 0;
+}
+
+.project-details .project-details-main .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  height: auto;
+  flex-direction: column;
+}
+
+.project-details .project-details-main .gallery .big-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 100%;
+  position: relative;
+}
+
+.project-details .project-details-main .gallery .small-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  position: relative;
+}
+
+.project-details .project-details-main .gallery .big-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.project-details .project-details-main .gallery .small-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  object-position: center;
+}
+
+.project-details .project-desc {
+  display: flex;
+  
+  justify-content: center;
+  align-items: start;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.project-details .project-desc h4 {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: var(--white);
+  margin-bottom: 10px;
+  margin-top: 55px;
+}
+
+.project-details .project-desc p {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #b5b5b5;
+  margin-bottom: 15px;
+}
+
+.project-details .project-desc .contents {
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+.project-details .project-desc .project-sidebar {
+  width: 100%;
+  margin-right: auto;
+}
+
+.project-details .project-desc .cards-step {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px 0 40px 0;
+}
+
+.project-details .project-desc .cards-step .step-card {
+  background: rgba(217, 217, 217, .05);
+  border: 1px solid rgba(255, 255, 255, .05);
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+}
+
+.project-details .project-desc .cards-step .step-card .icon {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.project-details .project-desc .cards-step .step-card h5 {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  padding-left: 25px;
+}
+
+.project-details .project-desc .cards-step .step-card h4 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: capitalize;
+  color: var(--white);
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project-details .project-desc .cards-step .step-card p {
+  padding: 10px 25px;
+}
+
+.project-details .short-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project-details .short-gallery .big {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-details .short-gallery .small {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-details .client-details {
+  width: 98%;
+  margin: auto;
+  background: url(/public/portfolio-info-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 55px;
+}
+
+.project-details .client-details div {
+  text-align: center;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .04);
+}
+
+.project-details .client-details div p {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 15px;
+  color: #b5b5b5;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.project-details .client-details div h4 {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.project-details .que-card {
+  background-image: url(/public/portfolio-dt-06.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 30px 240px;
+  border-radius: 20px;
+}
+
+.project-details .que-card h3 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.project-details .que-card h3 span {
+  font-weight: 400;
+  color: #b5b5b5;
+}
+
+.project-details .que-card button {
+  margin-top: 30px;
+  width: 50%;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.project-details-main .project-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-trans-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -100%;
+}
+
+.project-details-main .project-link a {
+  font-size: 25px;
+  font-family: var(--font-secondary);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-details-main .project-link a svg {
+  width: 25px;
+  height: auto;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.project-details-main .project-link a:hover svg {
+  transform: rotate(0deg);
+}
+
+.sm-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.project-details-main .big-img:hover img,
+.project-details-main .sm-img:hover img
+{
+  filter: brightness(0.5);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.project-details-main .big-img:hover .project-link,
+.project-details-main .sm-img:hover .project-link
+{
+  bottom: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+  .project-details .project-details-main {
+      padding: 120px 0;
+  }
+
+  .project-details .projects-head {
+      height: 400px;
+  }
+
+  .project-details .projects-head p {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #b5b5b5;
+      display: inline-block;
+      padding: 8px 40px;
+      position: relative;
+      background-color: rgba(6, 216, 137, 0.2);
+      margin-bottom: 10px;
+  }
+
+  .project-details .projects-head p::before {
+      content: "";
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: var(--white);
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .project-details .projects-head p::after {
+      content: "";
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: var(--white);
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .project-details .projects-head h3 {
+      font-size: 54px;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: capitalize;
+      margin-bottom: 15px;
+  }
+
+  .project-details .abouth1 {
+      position: absolute;
+      opacity: 0.3;
+      left: 100px;
+      top: 90px;
+      border-radius: 70px;
+      z-index: 0;
+  }
+
+  .project-details .abouth2 {
+      position: absolute;
+      opacity: 0.3;
+      right: 100px;
+      border-radius: 130px 130px 0 0;
+      top: 215px;
+      z-index: 0;
+  }
+
+  .project-details .project-desc {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      margin-top: 55px;
+      flex-wrap: wrap;
+  }
+
+  .project-details .project-desc .contents {
+      width: 100%;
+      padding: 0 0 0 0;
+  }
+
+  .project-details .project-desc .project-sidebar {
+      width: 60%;
+      margin-right: auto;
+  }
+
+  .project-details .project-desc .cards-step {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 20px 0 40px 0;
+  }
+
+  .project-details .project-desc .cards-step .step-card {
+      background: rgba(217, 217, 217, .05);
+      border: 1px solid rgba(255, 255, 255, .05);
+      border-radius: 5px;
+      position: relative;
+      width: 40%;
+  }
+
+  .project-details .project-desc .cards-step .step-card .icon {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+  }
+
+  .project-details .project-desc .cards-step .step-card h5 {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      padding-left: 25px;
+  }
+
+  .project-details .project-desc .cards-step .step-card h4 {
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 28px;
+      text-transform: capitalize;
+      color: var(--white);
+      margin: 0;
+      padding-left: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .project-details .project-desc .cards-step .step-card p {
+      padding: 10px 25px;
+  }
+
+  .project-details .short-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+
+  .project-details .short-gallery .big {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .project-details .short-gallery .small {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .project-details .client-details {
+      width: 98%;
+      margin: auto;
+      background: url(/public/portfolio-info-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      margin-bottom: 55px;
+  }
+
+  .project-details .client-details div {
+      text-align: center;
+      padding: 25px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+  }
+
+  .project-details .client-details div p {
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-weight: 400;
+      font-size: 15px;
+      color: #b5b5b5;
+      display: inline-block;
+      margin-bottom: 5px;
+  }
+
+  .project-details .client-details div h4 {
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--white);
+  }
+
+  .project-details .que-card {
+      background-image: url(/public/portfolio-dt-06.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 80px 30px 240px;
+      border-radius: 20px;
+  }
+
+  .project-details .que-card h3 {
+      font-family: var(--font-secondary);
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.01em;
+      color: var(--white);
+      margin-bottom: 0;
+  }
+
+  .project-details .que-card h3 span {
+      font-weight: 400;
+      color: #b5b5b5;
+  }
+
+  .project-details .que-card button {
+      margin-top: 30px;
+      width: 50%;
+      height: 50px;
+      border: 0;
+      border-radius: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-details .project-details-main .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      gap: 20px;
+      height: 550px;
+      flex-direction: row;
+  }
+
+  .project-details .project-details-main .gallery .big-img {
+      width: 60%;
+      overflow: hidden;
+      border-radius: 15px;
+      height: 100%;
+
+  }
+
+  .project-details .project-details-main .gallery .small-img {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      height: 100%;
+  }
+
+  .project-details .project-details-main .gallery .big-img img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+  }
+
+  .project-details .project-details-main .gallery .small-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      object-position: center;
+  }
+
+  .project-details .project-desc .contents {
+      width: 80%;
+      padding: 0 30px 0 0;
+  }
+
+  .project-details .project-desc .project-sidebar {
+      width: 20%;
+  }
+
+  .project-details .project-desc .cards-step {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      padding: 20px 0 40px 0;
+  }
+
+  .project-details .project-desc .cards-step .step-card {
+      background: rgba(217, 217, 217, .05);
+      border: 1px solid rgba(255, 255, 255, .05);
+      border-radius: 5px;
+      position: relative;
+      width: 30%;
+  }
+
+  .project-details .project-desc .cards-step .step-card .icon {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+  }
+
+  .project-details .project-desc .cards-step .step-card h5 {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      padding-left: 25px;
+  }
+
+  .project-details .project-desc .cards-step .step-card h4 {
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 28px;
+      text-transform: capitalize;
+      color: var(--white);
+      margin: 0;
+      padding-left: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .project-details .project-desc .cards-step .step-card p {
+      padding: 10px 25px;
+  }
+
+  .project-details .short-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+
+  .project-details .short-gallery .big {
+      width: 58%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .project-details .short-gallery .small {
+      width: 38%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .project-details .client-details {
+      width: 100%;
+      margin: auto;
+      background: url(/public/portfolio-info-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      margin-bottom: 55px;
+  }
+
+  .project-details .client-details div {
+      text-align: center;
+      padding: 25px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+  }
+
+  .project-details .client-details div p {
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-weight: 400;
+      font-size: 15px;
+      color: #b5b5b5;
+      display: inline-block;
+      margin-bottom: 5px;
+  }
+
+  .project-details .client-details div h4 {
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--white);
+  }
+
+  .project-details .que-card {
+      background-image: url(/public/portfolio-dt-06.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 80px 30px 240px;
+      border-radius: 20px;
+  }
+
+  .project-details .que-card h3 {
+      font-family: var(--font-secondary);
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.01em;
+      color: var(--white);
+      margin-bottom: 0;
+  }
+
+  .project-details .que-card h3 span {
+      font-weight: 400;
+      color: #b5b5b5;
+  }
+
+  .project-details .que-card button {
+      margin-top: 30px;
+      width: 90%;
+      height: 50px;
+      border: 0;
+      border-radius: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-details .project-desc .contents {
+      width: 70%;
+      padding: 0 55px 0 0;
+  }
+
+  .project-details .project-desc .project-sidebar {
+      width: 30%;
+  }
+
+  .project-details .project-desc .cards-step {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px 0 40px 0;
+  }
+
+  .project-details .project-desc .cards-step .step-card {
+      background: rgba(217, 217, 217, .05);
+      border: 1px solid rgba(255, 255, 255, .05);
+      border-radius: 5px;
+      position: relative;
+      width: 30%;
+  }
+
+  .project-details .project-desc .cards-step .step-card .icon {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+  }
+
+  .project-details .project-desc .cards-step .step-card h5 {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      padding-left: 25px;
+  }
+
+  .project-details .project-desc .cards-step .step-card h4 {
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 28px;
+      text-transform: capitalize;
+      color: var(--white);
+      margin: 0;
+      padding-left: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .project-details .project-desc .cards-step .step-card p {
+      padding: 10px 25px;
+  }
+
+  .project-details .short-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+
+  .project-details .short-gallery .big {
+      width: 58%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .project-details .short-gallery .small {
+      width: 38%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .project-details .client-details {
+      width: 98%;
+      margin: auto;
+      background: url(/public/portfolio-info-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      margin-bottom: 55px;
+  }
+
+  .project-details .client-details div {
+      text-align: center;
+      padding: 25px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+  }
+
+  .project-details .client-details div p {
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-weight: 400;
+      font-size: 15px;
+      color: #b5b5b5;
+      display: inline-block;
+      margin-bottom: 5px;
+  }
+
+  .project-details .client-details div h4 {
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--white);
+  }
+
+  .project-details .que-card {
+      background-image: url(/public/portfolio-dt-06.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 80px 30px 240px;
+      border-radius: 20px;
+  }
+
+  .project-details .que-card h3 {
+      font-family: var(--font-secondary);
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.01em;
+      color: var(--white);
+      margin-bottom: 0;
+  }
+
+  .project-details .que-card h3 span {
+      font-weight: 400;
+      color: #b5b5b5;
+  }
+
+  .project-details .que-card button {
+      margin-top: 30px;
+      width: 50%;
+      height: 50px;
+      border: 0;
+      border-radius: 5px;
+  }
+}
+
+@media (min-width: 1400px) {}

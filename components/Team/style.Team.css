@@ -1,0 +1,224 @@
+.team-section {
+  padding: 50px 0;
+}
+
+.team-section .team-head {
+  margin-bottom: 55px;
+}
+
+.team-section .team-head span {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: rgba(6, 216, 137, 0.1);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.team-section .team-head h4 {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--white);
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.team-section .team-head p {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--white-trans-40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.team-section .team-card {
+  overflow: hidden;
+  position: relative;
+  border: 3px solid var(--primary-trans-60);
+  width: 95%;
+  height: 95%;
+}
+
+.team-section .team-box {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-section .team-box::before {
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: var(--primary-trans-50);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.team-section .team-box::after {
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: var(--primary-trans-50);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+.team-section .team-card img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.team-section .team-card:hover img {
+  filter: brightness(0.3);
+}
+
+.team-section .person-details {
+  background: var(--primary-trans-50);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: -100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.team-card:hover .person-details {
+  bottom: 0;
+}
+
+.team-section .person-details p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-trans-60);
+
+}
+
+.team-section .social-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.team-section .social-team a svg {
+  height: 25px;
+  fill: var(--white);
+}
+
+.team-section .social-team a.whatsapp svg {
+  height: 30px;
+}
+
+.teamSlide .swiper-slide {
+  justify-content: center;
+  display: flex;
+}
+
+.team-slide-btn {
+  justify-content: end;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.team-slide-btn button {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.team-slide-btn button:hover {
+  background-color: var(--primary-trans-40);
+}
+
+.team-slide-btn button svg {
+  width: 50%;
+  fill: var(--primary);
+}
+
+.team-section button.slick-prev,
+.team-section button.slick-next {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .team-section .team-head p {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      color: var(--white-trans-40);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      padding: 0 80px;
+  }
+
+  .team-section {
+      padding: 120px 0;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-vars": "off",
+    // "unused-imports/no-unused-imports": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react/no-unescaped-entities": "off"
+  }
+}

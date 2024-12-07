@@ -1,0 +1,237 @@
+.dashTeam {
+    width: 85%;
+    margin-left: auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.dashTeam h4 {
+    font-size: 22px;
+}
+
+.service-control {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.service-control .service-action-edit {
+    width: 100%;
+}
+
+.service-control .service-list {
+    background: #fff;
+    width: 100%;
+    overflow-x: scroll;
+    box-shadow: 0 0 5px #0000005d;
+    border-radius: 8px;
+}
+
+.service-control .service-list table {
+    width: 100%;
+    padding: 15px;
+    gap: 0;
+    border-collapse: collapse;
+}
+
+.service-control table thead {
+    border-bottom: 1px solid #000;
+}
+
+.service-control table thead th,
+.service-control table thead td {
+    padding: 10px;
+    font-size: 12px;
+    font-family: var(--font-secondary);
+    color: #636363;
+}
+
+.service-control table tbody th,
+.service-control table tbody td {
+    padding: 10px;
+    font-size: 15px;
+    font-family: var(--font-secondary);
+    color: #636363;
+    white-space: nowrap;
+}
+
+.service-control table tbody td img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 2px #00000074;
+    object-fit: cover;
+}
+
+.service-control table tbody td button {
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-control table tbody td button svg {
+    font-size: 18px;
+    width: 18px;
+}
+
+.service-control .update-service {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #0000005b;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.service-control .update-service .team-input {
+    width: 100%;
+}
+
+.service-control .update-service svg {
+    cursor: pointer;
+}
+
+.service-control .update-service form {
+    padding-top: 20px;
+}
+
+.service-control .update-service .team-input input,
+.service-control .update-service .team-input textarea {
+    width: 100%;
+}
+
+.service-control .update-service .team-input textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+.service-control .add-team {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px #0000005b;
+}
+
+.service-control .add-team h4 {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.service-control .team-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.service-control .team-input label {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+}
+
+.service-control .team-input input {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    padding: 7px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #636363;
+    width: 100%;
+}
+
+.service-control .team-input select {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    padding: 7px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #636363;
+    width: 100%;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.service-control .team-input select option {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-control .team-input textarea {
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    padding: 7px;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #636363;
+    width: 100%;
+}
+
+.service-control .add-btn {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.service-control form button {
+    width: 250px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.service-control .team-input .photo-box {
+    width: 100%;
+    height: 280px;
+    border: 1px solid #636363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service-control .team-input .photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .service-control {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    .service-control .service-action-edit {
+        width: 48%;
+    }
+
+    .service-control .add-team {
+        width: 48%;
+        background: #fff;
+        border-radius: 8px;
+        padding: 10px 20px;
+        box-shadow: 0 0 5px #0000005b;
+    }
+}
